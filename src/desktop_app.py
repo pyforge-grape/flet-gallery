@@ -1,15 +1,8 @@
 import flet as ft
 
+from desktop_app_router import DesktopAppRouter
+
 
 @ft.component
 def DesktopApp():
-    return ft.View(
-        controls=[
-            ft.SafeArea(
-                expand=True,
-                content=ft.Pagelet(
-                    content=ft.Text("Desktop"),
-                ),
-            )
-        ],
-    )
+    return DesktopAppRouter()
