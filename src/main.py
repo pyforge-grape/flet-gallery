@@ -1,7 +1,6 @@
 import flet as ft
 
-from desktop_app import DesktopApp
-from mobile_app import MobileApp
+from app import DesktopApp, MobileApp
 
 
 def main(page: ft.Page):
