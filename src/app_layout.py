@@ -1,5 +1,8 @@
 import flet as ft
 
+from sections.app_bottom_bar import MobileBottomBar
+from sections.app_top_bar import AppTopBar
+
 
 @ft.component
 def DesktopAppLayout():
@@ -7,6 +10,7 @@ def DesktopAppLayout():
 
     return ft.View(
         route=ft.use_view_path(),
+        appbar=AppTopBar(),
         controls=[
             ft.SafeArea(
                 expand=True,
@@ -24,6 +28,7 @@ def MobileAppLayout():
 
     return ft.View(
         route=ft.use_view_path(),
+        appbar=AppTopBar(),
         controls=[
             ft.SafeArea(
                 expand=True,
@@ -32,4 +37,5 @@ def MobileAppLayout():
                 ),
             )
         ],
+        bottom_appbar=MobileBottomBar(),
     )
