@@ -5,6 +5,7 @@ import flet as ft
 
 from features.gallery.router import ToGallery
 from features.home.router import ToHome
+from features.notifications.router import ToNotifications
 
 
 @ft.component
@@ -36,7 +37,7 @@ def MobileBottomBar():
             label="Notifications",
             icon=ft.Icons.NOTIFICATIONS_OUTLINED,
             selected_icon=ft.Icons.NOTIFICATIONS_SHARP,
-            on_click=(),
+            on_click=ToNotifications,
             badge=3,
         ),
     ]
