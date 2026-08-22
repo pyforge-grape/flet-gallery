@@ -40,9 +40,9 @@ def MobileBottomBar():
                     ],
                     spacing=0,
                     horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+                    expand=True,
                 )
                 for item in ITEMS
             ],
-            alignment=ft.MainAxisAlignment.SPACE_AROUND,
         )
     )
