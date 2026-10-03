@@ -1,13 +1,7 @@
 import flet as ft
 
 from apps.desktop.layout import AppLayout
-from features.gallery.desktop.routes import GalleryRoutes
-from features.home.desktop.routes import HomeRoutes
-from features.index.desktop.routes import IndexRoutes
-from features.master.desktop.routes import MasterRoutes
-from features.notifications.desktop.routes import NotificationsRoutes
-from features.profile.desktop.routes import ProfileRoutes
-from features.settings.desktop.routes import SettingsRoutes
+from features.routes_desktop import FeatureRoutes
 
 
 def AppRouter():
@@ -16,15 +10,7 @@ def AppRouter():
             ft.Route(
                 component=AppLayout,
                 outlet=True,
-                children=[
-                    *IndexRoutes(),
-                    *ProfileRoutes(),
-                    *SettingsRoutes(),
-                    *HomeRoutes(),
-                    *GalleryRoutes(),
-                    *NotificationsRoutes(),
-                    *MasterRoutes(),
-                ],
+                children=FeatureRoutes(),
             ),
         ],
         manage_views=True,
