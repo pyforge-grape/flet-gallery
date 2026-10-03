@@ -5,7 +5,11 @@ from apps.mobile.app import MobileApp
 from apps.tablet.app import TabletApp
 
 
-def create_app(page: ft.Page):
+def create_app():
+    page = ft.context.page
+
+    page.adaptive = True
+
     assert page.platform is not None
     assert page.width is not None
 

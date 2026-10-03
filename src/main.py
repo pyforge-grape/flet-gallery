@@ -4,9 +4,7 @@ from apps.factory import create_app
 
 
 def main(page: ft.Page):
-    page.adaptive = True
-
-    app = create_app(page)
+    app = create_app()
     page.render_views(app)
 
 
