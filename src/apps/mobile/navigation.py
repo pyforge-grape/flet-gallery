@@ -1,6 +1,6 @@
 import flet as ft
 
-from apps.common.navigation.items import NAVIGATION_ITEMS_MOBILE
+from apps.common.sections.navigation.items import NAVIGATION_ITEMS_MOBILE
 
 
 @ft.component

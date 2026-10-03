@@ -1,6 +1,6 @@
 import flet as ft
 
-from apps.common.bottom_bar.items import BOTTOM_BAR_ITEMS
+from apps.common.sections.bottom_bar.items import BOTTOM_BAR_ITEMS
 
 
 @ft.component

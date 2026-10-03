@@ -2,6 +2,7 @@ from dataclasses import dataclass
 
 import flet as ft
 
+from features.experiment.paths import EXPERIMENT
 from features.gallery.paths import GALLERY
 from features.home.paths import HOME
 from features.master.paths import MASTER
@@ -40,6 +41,12 @@ NAVIGATION_ITEMS = [
         icon=ft.Icons.TABLE_ROWS_OUTLINED,
         selected_icon=ft.Icons.TABLE_ROWS_SHARP,
         path=MASTER,
+    ),
+    NavigationItem(
+        label="Experiment",
+        icon=ft.Icons.SCIENCE_OUTLINED,
+        selected_icon=ft.Icons.SCIENCE_SHARP,
+        path=EXPERIMENT,
     ),
 ]
 

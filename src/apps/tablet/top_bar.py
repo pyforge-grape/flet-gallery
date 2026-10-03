@@ -1,6 +1,6 @@
 import flet as ft
 
-from apps.common.top_bar.menu_items import MENU_ITEMS
+from apps.common.sections.top_bar.menu_items import MENU_ITEMS
 
 
 @ft.component
