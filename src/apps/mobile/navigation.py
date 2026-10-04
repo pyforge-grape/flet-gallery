@@ -1,6 +1,8 @@
 import flet as ft
 
+from apps.common.i18n.translations import use_translation
 from apps.common.sections.navigation.items import NAVIGATION_ITEMS_MOBILE
+from apps.common.stores.locale import use_locale_store
 
 
 @ft.component
@@ -14,6 +16,9 @@ def AppNavigation():
         -1,
     )
 
+    localStore = use_locale_store()
+    t = use_translation(localStore.locale)
+
     async def change_selected_item(e):
         index = e.control.selected_index
         ft.context.page.navigate(NAVIGATION_ITEMS_MOBILE[index].path)
@@ -24,7 +29,7 @@ def AppNavigation():
         on_change=change_selected_item,
         controls=[
             ft.NavigationDrawerDestination(
-                label=item.label,
+                label=t(item.label),
                 icon=item.icon,
                 selected_icon=item.selected_icon,
             )

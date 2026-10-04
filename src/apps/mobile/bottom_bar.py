@@ -1,6 +1,8 @@
 import flet as ft
 
+from apps.common.i18n.translations import use_translation
 from apps.common.sections.bottom_bar.items import BOTTOM_BAR_ITEMS
+from apps.common.stores.locale import use_locale_store
 
 
 @ft.component
@@ -13,6 +15,9 @@ def AppBottomBar():
         ),
         None,
     )
+
+    localStore = use_locale_store()
+    t = use_translation(localStore.locale)
 
     def change_selected_item(index: int):
         ft.context.page.navigate(BOTTOM_BAR_ITEMS[index].path)
@@ -28,7 +33,7 @@ def AppBottomBar():
                             selected=selected_index == index,
                             on_click=lambda _, i=index: change_selected_item(i),
                         ),
-                        ft.Text(item.label),
+                        ft.Text(t(item.label)),
                     ],
                     expand=True,
                     spacing=0,
