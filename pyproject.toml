@@ -8,7 +8,7 @@ authors = [
     { name = "hachirog", email = "hachiro@grape80.com" }
 ]
 dependencies = [
-    "flet>=1.0.0"
+    "flet>=1.0.0",
 ]
 
 [dependency-groups]
