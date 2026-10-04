@@ -1,6 +1,8 @@
 import flet as ft
 
+from apps.common.i18n.translations import use_translation
 from apps.common.sections.navigation.items import NAVIGATION_ITEMS
+from apps.common.stores.locale import use_locale_store
 
 
 @ft.component
@@ -15,6 +17,9 @@ def AppNavigation():
         ),
         None,
     )
+
+    localStore = use_locale_store()
+    t = use_translation(localStore.locale)
 
     def toggle_rail(e):
         set_extended(not extended)
@@ -42,7 +47,7 @@ def AppNavigation():
         ),
         destinations=[
             ft.NavigationRailDestination(
-                label=item.label,
+                label=t(item.label),
                 icon=item.icon,
                 selected_icon=item.selected_icon,
             )
