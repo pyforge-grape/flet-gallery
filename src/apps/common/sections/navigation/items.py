@@ -3,11 +3,7 @@ from dataclasses import dataclass
 import flet as ft
 
 from apps.common.i18n.types import TranslationKey
-from features.experiment.paths import EXPERIMENT
-from features.gallery.paths import GALLERY
-from features.home.paths import HOME
-from features.master.paths import MASTER
-from features.notifications.paths import NOTIFICATIONS
+from features import paths
 
 
 @dataclass(frozen=True)
@@ -23,31 +19,31 @@ NAVIGATION_ITEMS = [
         label="home.link.label",
         icon=ft.Icons.HOME_OUTLINED,
         selected_icon=ft.Icons.HOME_SHARP,
-        path=HOME,
+        path=paths.HOME,
     ),
     NavigationItem(
         label="gallery.link.label",
         icon=ft.Icons.GRID_VIEW_OUTLINED,
         selected_icon=ft.Icons.GRID_VIEW_SHARP,
-        path=GALLERY,
+        path=paths.GALLERY,
     ),
     NavigationItem(
         label="notifications.link.label",
         icon=ft.Icons.NOTIFICATIONS_OUTLINED,
         selected_icon=ft.Icons.NOTIFICATIONS_SHARP,
-        path=NOTIFICATIONS,
+        path=paths.NOTIFICATIONS,
     ),
     NavigationItem(
         label="master.link.label",
         icon=ft.Icons.TABLE_ROWS_OUTLINED,
         selected_icon=ft.Icons.TABLE_ROWS_SHARP,
-        path=MASTER,
+        path=paths.MASTER,
     ),
     NavigationItem(
         label="experiment.link.label",
         icon=ft.Icons.SCIENCE_OUTLINED,
         selected_icon=ft.Icons.SCIENCE_SHARP,
-        path=EXPERIMENT,
+        path=paths.EXPERIMENT,
     ),
 ]
 
@@ -56,8 +52,8 @@ NAVIGATION_ITEMS_MOBILE = [
     for item in NAVIGATION_ITEMS
     if item.path
     not in (
-        HOME,
-        GALLERY,
-        NOTIFICATIONS,
+        paths.HOME,
+        paths.GALLERY,
+        paths.NOTIFICATIONS,
     )
 ]

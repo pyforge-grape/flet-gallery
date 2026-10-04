@@ -3,8 +3,7 @@ from dataclasses import dataclass
 import flet as ft
 
 from apps.common.i18n.types import TranslationKey
-from features.profile.paths import PROFILE
-from features.settings.paths import SETTINGS
+from features import paths
 
 
 @dataclass(frozen=True)
@@ -18,11 +17,11 @@ MENU_ITEMS = [
     MenuItem(
         content="profile.link.label",
         icon=ft.Icons.PERSON,
-        path=PROFILE,
+        path=paths.PROFILE,
     ),
     MenuItem(
         content="settings.link.label",
         icon=ft.Icons.SETTINGS,
-        path=SETTINGS,
+        path=paths.SETTINGS,
     ),
 ]
