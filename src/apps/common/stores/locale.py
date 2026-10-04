@@ -1,12 +1,8 @@
 from dataclasses import dataclass
-from typing import Literal
 
 import flet as ft
 
-Locale = Literal[
-    "en-US",
-    "ja-JP",
-]
+from apps.common.i18n.types import Locale
 
 
 @ft.observable
