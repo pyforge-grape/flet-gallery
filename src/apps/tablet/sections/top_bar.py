@@ -1,8 +1,8 @@
 import flet as ft
 
 from apps.common.i18n.translations import use_translation
-from apps.common.sections.top_bar.menu_items import MENU_ITEMS
 from apps.common.stores.locale import use_locale_store
+from features.top_bar_menu_items import MENU_ITEMS
 
 
 @ft.component

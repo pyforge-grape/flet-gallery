@@ -1,8 +1,8 @@
 import flet as ft
 
 from apps.common.i18n.translations import use_translation
-from apps.common.sections.navigation.items import NAVIGATION_ITEMS_MOBILE
 from apps.common.stores.locale import use_locale_store
+from features.navigation_items import NAVIGATION_ITEMS_MOBILE
 
 
 @ft.component

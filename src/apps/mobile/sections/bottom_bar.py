@@ -1,8 +1,8 @@
 import flet as ft
 
 from apps.common.i18n.translations import use_translation
-from apps.common.sections.bottom_bar.items import BOTTOM_BAR_ITEMS
 from apps.common.stores.locale import use_locale_store
+from features.bottom_bar_items import BOTTOM_BAR_ITEMS
 
 
 @ft.component

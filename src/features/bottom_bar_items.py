@@ -1,18 +1,7 @@
-from dataclasses import dataclass
-
 import flet as ft
 
-from apps.common.i18n.types import TranslationKey
+from apps.common.sections.bottom_bar_item import BottomBarItem
 from features import paths
-
-
-@dataclass(frozen=True)
-class BottomBarItem:
-    label: TranslationKey
-    icon: ft.IconData
-    selected_icon: ft.IconData
-    path: str
-
 
 BOTTOM_BAR_ITEMS = [
     BottomBarItem(

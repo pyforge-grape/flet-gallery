@@ -1,18 +1,7 @@
-from dataclasses import dataclass
-
 import flet as ft
 
-from apps.common.i18n.types import TranslationKey
+from apps.common.sections.navigation_item import NavigationItem
 from features import paths
-
-
-@dataclass(frozen=True)
-class NavigationItem:
-    label: TranslationKey
-    icon: ft.IconData
-    selected_icon: ft.IconData
-    path: str
-
 
 NAVIGATION_ITEMS = [
     NavigationItem(

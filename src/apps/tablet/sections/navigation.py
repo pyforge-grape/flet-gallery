@@ -1,13 +1,13 @@
 import flet as ft
 
 from apps.common.i18n.translations import use_translation
-from apps.common.sections.navigation.items import NAVIGATION_ITEMS
 from apps.common.stores.locale import use_locale_store
+from features.navigation_items import NAVIGATION_ITEMS
 
 
 @ft.component
 def AppNavigation():
-    extended, set_extended = ft.use_state(True)
+    extended, set_extended = ft.use_state(False)
 
     selected_index = next(
         (
@@ -26,6 +26,7 @@ def AppNavigation():
 
     def change_selected_item(e):
         index = e.control.selected_index
+        set_extended(False)
         ft.context.page.navigate(NAVIGATION_ITEMS[index].path)
 
     return ft.NavigationRail(
