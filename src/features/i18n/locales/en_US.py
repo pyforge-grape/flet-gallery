@@ -1,6 +1,7 @@
 from features.i18n.types import Translation
 
 TRANSLATION: Translation = {
+    "app.title": "Flet Gallery",
     "profile.link.label": "Profile",
     "settings.link.label": "Settings",
     "home.link.label": "Home",

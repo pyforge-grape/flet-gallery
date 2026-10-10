@@ -7,6 +7,7 @@ Locale = Literal[
 
 
 TranslationKey = Literal[
+    "app.title",
     "profile.link.label",
     "settings.link.label",
     "home.link.label",
