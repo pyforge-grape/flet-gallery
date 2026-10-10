@@ -1,7 +1,7 @@
 import flet as ft
 
 from apps.mobile.layout import AppLayout
-from features.routes_mobile import FeatureRoutes
+from features.routes.mobile import FeatureRoutes
 
 
 def AppRouter():

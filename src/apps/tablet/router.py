@@ -1,7 +1,7 @@
 import flet as ft
 
 from apps.tablet.layout import AppLayout
-from features.routes_tablet import FeatureRoutes
+from features.routes.tablet import FeatureRoutes
 
 
 def AppRouter():

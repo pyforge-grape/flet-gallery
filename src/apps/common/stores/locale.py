@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 import flet as ft
 
-from apps.common.i18n.types import Locale
+from features.i18n.types import Locale
 
 
 @ft.observable

@@ -1,8 +1,8 @@
 import flet as ft
 
-from apps.mobile.sections.bottom_bar import AppBottomBar
-from apps.mobile.sections.navigation import AppNavigation
-from apps.mobile.sections.top_bar import AppTopBar
+from apps.mobile.bottom_bar import AppBottomBar
+from apps.mobile.navigation import AppNavigation
+from apps.mobile.top_bar import AppTopBar
 
 
 @ft.component

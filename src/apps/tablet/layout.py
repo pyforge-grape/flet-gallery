@@ -1,7 +1,7 @@
 import flet as ft
 
-from apps.tablet.sections.navigation import AppNavigation
-from apps.tablet.sections.top_bar import AppTopBar
+from apps.tablet.navigation import AppNavigation
+from apps.tablet.top_bar import AppTopBar
 
 
 @ft.component
