@@ -1,11 +1,5 @@
 from typing import Literal
 
-Locale = Literal[
-    "en-US",
-    "ja-JP",
-]
-
-
 TranslationKey = Literal[
     "app.title",
     "profile.link.label",
@@ -17,4 +11,10 @@ TranslationKey = Literal[
     "experiment.link.label",
 ]
 
+
 Translation = dict[TranslationKey, str]
+
+Locale = Literal[
+    "en-US",
+    "ja-JP",
+]
