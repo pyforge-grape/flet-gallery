@@ -1,4 +1,3 @@
-from features.content.experiment.desktop.routes import ExperimentRoutes
 from features.content.gallery.desktop.routes import GalleryRoutes
 from features.content.home.desktop.routes import HomeRoutes
 from features.content.index.desktop.routes import IndexRoutes

@@ -1,5 +1,4 @@
 # ruff: noqa: F401
-from features.content.experiment.paths import EXPERIMENT
 from features.content.gallery.paths import GALLERY
 from features.content.home.paths import HOME
 from features.content.index.paths import INDEX
