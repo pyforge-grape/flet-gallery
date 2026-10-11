@@ -8,5 +8,4 @@ TRANSLATION: Translation = {
     "gallery.link.label": "ギャラリー",
     "notifications.link.label": "通知",
     "master.link.label": "マスタ",
-    "experiment.link.label": "実験",
 }

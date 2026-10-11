@@ -16,5 +16,4 @@ def FeatureRoutes():
         *GalleryRoutes(),
         *NotificationsRoutes(),
         *MasterRoutes(),
-        *ExperimentRoutes(),
     ]

@@ -8,7 +8,6 @@ TranslationKey = Literal[
     "gallery.link.label",
     "notifications.link.label",
     "master.link.label",
-    "experiment.link.label",
 ]
 
 

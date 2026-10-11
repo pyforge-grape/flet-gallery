@@ -28,12 +28,6 @@ NAVIGATION_ITEMS = [
         selected_icon=ft.Icons.TABLE_ROWS_SHARP,
         path=paths.MASTER,
     ),
-    NavigationItem(
-        label="experiment.link.label",
-        icon=ft.Icons.SCIENCE_OUTLINED,
-        selected_icon=ft.Icons.SCIENCE_SHARP,
-        path=paths.EXPERIMENT,
-    ),
 ]
 
 NAVIGATION_ITEMS_MOBILE = [
